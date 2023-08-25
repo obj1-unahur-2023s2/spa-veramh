@@ -1,0 +1,24 @@
+import personas.*
+
+test "Olivia nace con concentracion = 6" {
+	
+	// assert.that(olivia.gradoDeConcentracion() == 6)    es valido pero no la forma correcta
+	assert.equals(6, olivia.gradoDeConcentracion())
+}
+
+test "Bruno nace sin sed"{
+	assert.notThat(bruno.tieneSed())
+}
+test "Bruno queda con 54500 de peso y tiene sed despues de banio de vapor"{
+	bruno.darseBanioDeVapor()
+	assert.equals(54500,bruno.peso())
+	assert.that(bruno.tieneSed())
+}
+
+/*
+ 
+ assert.equals()
+ assert.that()
+ assert.notThat() 
+ 
+ */
